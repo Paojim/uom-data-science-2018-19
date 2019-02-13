@@ -14,7 +14,7 @@
 # 1. Install and load libraries ----
 
 # Installing R packages
-install.packages("tidyverse")
+# install.packages("tidyverse")
 
 # Loading R packages
 library("tidyverse")
@@ -49,10 +49,20 @@ raw_data %>%
 # Task:
 
 # i. Select Age and Sex columns only 
+select.data.2 <- raw_data %>%
+  dplyr::select(Age)
+
+select.data.2 <- raw_data %>%
+  select(Sex)
+
 
 # ii. Select all data apart from the Survived column
+select.data.2 <- raw_data %>%
+  select (-Survived)
 
 # iii. Select the first three variables using numeric 
+select.data.2 <- raw_data %>%
+  select(1:3)
 
 # Filtering data
 
